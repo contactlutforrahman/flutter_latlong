@@ -1,6 +1,6 @@
 name: flutter_latlong
 description: A Flutter package for getting location and location distance and more using latitude and longitude.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/contactlutforrahman/flutter_latlong
 
 environment:
@@ -10,14 +10,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
   logging: any
-  dart_console_log_handler: ^1.0.0
   dart_validate: ^1.0.0
   intl: any
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
   test: any
   build_runner: any
   build_test: any

@@ -2,7 +2,6 @@ library flutter_latlong;
 
 import 'dart:math' as math;
 
-import 'package:dart_console_log_handler/dart_console_log_handler.dart';
 import 'package:dart_validate/dart_validate.dart';
 import 'package:flutter_latlong/spline.dart';
 import 'package:intl/intl.dart';

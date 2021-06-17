@@ -24,8 +24,6 @@ LatLng _defaultLatLngFactory(final double latitude, final double longitude) =>
 ///     final Path<Location> path = new Path<Location>(factory: locationFactory);
 ///
 class Path<T extends LatLng?> {
-  final Logger _logger = new Logger('latlong.Path');
-
   /// Coordinates managed by this class
   final List<T> _coordinates;
 
@@ -98,9 +96,8 @@ class Path<T extends LatLng?> {
         "Path distance must be at least ${stepDistance}mn (step distance) but was ${baseLength}");
 
     if (stepDistance > baseLength / 2) {
-      _logger.warning(
-          "Equalizing the path (L: $baseLength) with a key-frame distance of $stepDistance leads to"
-          "weired results. Turn of path smooting.");
+      print(
+          "Equalizing the path (L: $baseLength) with a key-frame distance of $stepDistance leads to weired results. Turn of path smooting.");
     }
 
     // no steps possible - so return an empty path
