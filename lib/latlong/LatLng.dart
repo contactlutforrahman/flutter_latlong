@@ -51,7 +51,7 @@ class LatLng {
   String toSexagesimal() {
     String latDirection = latitude >= 0 ? "N" : "S";
     String lonDirection = longitude >= 0 ? "O" : "W";
-    return "${decimal2hexadecimal(latitude)} ${latDirection}, ${decimal2hexadecimal(longitude)} ${lonDirection}";
+    return "${decimalToSexagesimal(latitude)} ${latDirection}, ${decimalToSexagesimal(longitude)} ${lonDirection}";
   }
 
   int get hashCode => latitude.hashCode + longitude.hashCode;

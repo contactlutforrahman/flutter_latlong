@@ -45,10 +45,10 @@ double normalizeBearing(final double bearing) => (bearing + 360) % 360;
 
 /// Converts a decimal coordinate value to hexadecimal format
 ///
-///     final String hexa1 = decimal2hexadecimal(51.519475);
-///     expect(hexa1, '51° 31\' 10.11"');
+///     final String sexa1 = decimalToSexagesimal(51.519475);
+///     expect(sexa1, '51° 31\' 10.11"');
 ///
-String decimal2hexadecimal(final double dec) {
+String decimalToSexagesimal(final double dec) {
   List<int> _split(final double value) {
     // NumberFormat is necessary to create digit after comma if the value
     // has no decimal point (only necessary for browser)

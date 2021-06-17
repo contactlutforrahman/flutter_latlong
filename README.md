@@ -19,39 +19,21 @@ dependencies:
 
 ### Distance
 ```dart
+
     import 'package:flutter_latlong/flutter_latlong.dart';
     final Distance distance = new Distance();
     
-    // km = 423
-    final int km = distance.as(LengthUnit.Kilometer,
-     new LatLng(52.518611,13.408056),new LatLng(51.519475,7.46694444));
-    
-    // meter = 422591.551
-    final int meter = distance(
-        new LatLng(52.518611,13.408056),
-        new LatLng(51.519475,7.46694444)
-        );
+    final num? km = distance.as(LengthUnit.Kilometer, LatLng(24.012856, 89.259056), LatLng(23.810331, 90.412521));
+
+    final num? meter = distance(
+      LatLng(24.012856, 89.259056),
+      LatLng(23.810331, 90.412521)
+    );
 
 ```
 
-## Offset
-```dart
-    import 'package:flutter_latlong/flutter_latlong.dart';
-    final Distance distance = const Distance();
-    final num distanceInMeter = (EARTH_RADIUS * math.PI / 4).round();
-    
-    final p1 = new LatLng(0.0, 0.0);
-    final p2 = distance.offset(p1, distanceInMeter, 180);
-    
-    // LatLng(latitude:-45.219848, longitude:0.0)
-    print(p2.round());
-    
-    // 45° 13' 11.45" S, 0° 0' 0.00" O
-    print(p2.toSexagesimal());
-            
-```
 
-## Path smoothing
+## Path
 ```dart
     import 'package:flutter_latlong/flutter_latlong.dart';
     // zigzag is a list of coordinates

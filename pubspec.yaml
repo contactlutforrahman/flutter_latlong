@@ -1,6 +1,6 @@
 name: flutter_latlong
 description: A Flutter package for getting location and location distance and more using latitude and longitude.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/contactlutforrahman/flutter_latlong
 
 environment:
