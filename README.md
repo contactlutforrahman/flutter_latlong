@@ -2,6 +2,8 @@
 
 A Flutter package for getting location and location distance and more using latitude and longitude.
 
+[![pub package](https://img.shields.io/pub/v/flutter_latlong.svg)](https://pub.dev/packages/flutter_latlong)
+
 ## Installation
 
 ``` flutter pub add flutter_latlong ```
@@ -11,7 +13,7 @@ or
 
 ```
 dependencies:
-  flutter_latlong: ^1.0.0
+  flutter_latlong: ^1.0.3
 ```
 
 ## Usage

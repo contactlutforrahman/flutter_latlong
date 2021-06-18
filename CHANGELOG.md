@@ -9,3 +9,7 @@
 ## 1.0.2
 
 * Made codes more efficient. Updated Library, example project and documentation.
+
+## 1.0.3
+
+* Updated.
